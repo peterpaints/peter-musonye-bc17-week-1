@@ -7,7 +7,7 @@ def gen_primes(n):
     else:
         """Generate prime numbers from 1 up to the specified number n."""
         prime_numbers = []
-        for i in xrange(2, n + 1, 1):   # xrange, and skip all even numbers.
+        for i in xrange(1, n + 1, 2):   # xrange, and skip all even numbers.
             prime = True
             # This filters out non-primes. A prime number is not divisible
             # by any number other than itself
@@ -19,4 +19,14 @@ def gen_primes(n):
         return prime_numbers
 
 # test case n
-print gen_primes(39)
+# print
+gen_primes(1000000)
+
+import time
+start_time = time.time()
+# main()
+print("--- %s seconds ---" % (time.time() - start_time))
+
+# gen_primes(39) logs 0.00000214576721191 seconds
+# gen_primes(10000) logs 0.00000309944152832 seconds
+# gen_primes(1000000) did not finish.

@@ -1,3 +1,6 @@
+# This is an exercise obtained from exercism.io
+# The  tests were also obtained from exercism.io
+# I felt it modeled a real word scenario (watches), and so chose to tackle it.
 class Clock(object):
 		"""Display a clock depending on the parameters given"""
     def __init__(self, hours, minutes):
