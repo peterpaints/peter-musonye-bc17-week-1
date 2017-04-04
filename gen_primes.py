@@ -7,7 +7,7 @@ def gen_primes(n):
     else:
         """Generate prime numbers from 1 up to the specified number n."""
         prime_numbers = []
-        for i in xrange(2, n + 1):
+        for i in xrange(2, n + 1, 2):
             prime = True
             # This filters out non-primes. A prime number is not divisible
             # by any number other than itself
