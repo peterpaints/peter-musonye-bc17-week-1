@@ -13,7 +13,14 @@
 /home/peter-paints/Desktop/peter-musonye-bc17-week-1/.cache/**
 /home/peter-paints/Desktop/peter-musonye-bc17-week-1/__pycache__/**
 /home/peter-paints/Desktop/peter-musonye-bc17-week-1/local/**
-/home/peter-paints/Desktop/peter-musonye-bc17-week-1/.git/**
 /home/peter-paints/Desktop/peter-musonye-bc17-week-1/bin/**
+include/
+lib/
+.cache/
+__pycache__/
+local/
+bin/
+
+
 
 
