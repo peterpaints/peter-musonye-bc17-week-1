@@ -11,10 +11,10 @@ class Car(object):
         return False if self.type == 'trailer' else True
 
     def drive(self, acceleration):
-        if acceleration == 7:
-            self.speed = 77
-        elif acceleration == 3:
-            self.speed = 1000
+        if self.type == 'trailer':
+            self.speed += acceleration + 70
+        else:
+            self.speed += acceleration + 997
         return self
 
 
