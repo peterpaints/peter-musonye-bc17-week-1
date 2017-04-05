@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-import regex
+# import regex
 
 
 def words(string):
-    string = regex.findall(r'[\p{L}\w!&@$%^&?]+|[.,;:]', string)
+    # string = regex.findall(r'[\p{L}\w!&@$%^&?]+|[.,;:]', string)
+    string = string.split()
     for i in range(len(string)):
         try:
             if isinstance(int(string[i]), int):
