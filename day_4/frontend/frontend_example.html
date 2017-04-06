@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!-- bootstrap CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Animate CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<!-- FontAwesome -->
+		<script src="https://use.fontawesome.com/6ad42e0df3.js"></script>
+
+<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+
+<!-- bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recreating Facebook's logged out homepage</title>
+    <meta name="description" content="Recreating Facebook's logged out homepage">
+    <meta name="author" content="Peter Musonye">
+  </head>
+
+<style>
+  body {
+    background: linear-gradient(to bottom right, #f7f7f7, #bcbdc4);
+    height: 4000px;
+  }
+  .header1 {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 7;
+    font-family: verdana;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: #3b5998;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 7;
+    font-family: verdana;
+  }
+  .header h3 {
+    font-family: helvetica;
+    font-size: 4em;
+    margin-left: 100px;
+    height: 50px;
+    width: 110px
+    margin-top: 25px;
+  }
+  #form1 {
+    margin-left: 700px;
+    margin-top: -70px;
+    height: 60px;
+    width: 180px;
+  }
+  #form2 {
+    margin-left: 895px;
+    margin-top: -60px;
+    height: 60px;
+    width: 200px;
+  }
+  .submit1 {
+    margin-left: 1100px;
+    margin-top: -40px;
+    background: white;
+    color: #142170;
+    position: fixed;
+    z-index: 20;
+    height: 26px;
+    width: 70px;
+    cursor: pointer;
+  }
+  .body1 {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100px;
+    height: 545px;
+    /** background: #dfe3ee; */
+  }
+  #col1 {
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family: verdana;
+    font-size: 1.5em;
+    color: #142170;
+    height: 75px;
+    width: 550px;
+  }
+  #col2 {
+    margin-top: -100px;
+    margin-left: 700px;
+    font-family: helvetica;
+    font-size: 2.3em;
+    color: black;
+    height: 60px;
+    width: 500px;
+  }
+  #col2 h1 {
+    font-weight: bold;
+  }
+  .body1 > img {
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 250px;
+    width: 550px;
+    background-blend-mode: screen;
+  }
+  #form3 {
+    margin-top: -240px;
+    margin-left: 700px;
+    font-family: verdana;
+    font-size: 1.7em;
+    color: black;
+    width: 450px;
+    height: 500px;
+  }
+  #firstname, #surname {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  #email, #password {
+    width: 410px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  #date {
+    width: 410px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  #form3 > h4 {
+    padding-top: 10px;
+  }
+  #form3 > button {
+    width: 250px;
+    maargin-bottom: 25px;
+  }
+  #form3 > #terms {
+    font-size: 0.5em;
+    color: gray;
+    margin-top: 5px;
+  }
+  #form3 > p {
+    font-size: 0.5em;
+    color: gray;
+    margin-top: 35px;
+  }
+</style>
+
+<body>
+  <div class="header1">
+  </div>
+  <div class="header">
+    <!-- <img id="img1" src="" alt="" /> -->
+    <h3>facebook</h3>
+    <div id="form1">
+      Email or Phone<br>
+      <input placeholder="Email" type="mail" name="name" /><br>
+      <input type="checkbox" />Keep me logged in<br>
+    </div>
+    <div id="form2">
+      Password<br>
+      <input placeholder="Password" type="password" name="password" /><br>
+      Forgotten account?<br>
+    </div>
+    <input type="submit" class="submit1" value="Log In" />
+  </div>
+  <div class="body1 container-fluid">
+    <div id="col1">
+      Facebook helps you connect and share with the<br>
+      people in your life.
+    </div>
+    <div id="col2">
+      <h1>Create an account</h1>
+      <h4>It's free and always will be.</h4>
+    </div>
+    <img src="http://www.fortytwotimes.com/wp-content/uploads/2012/02/facebook-power-user.jpg" alt="Facebook connected world">
+    <div id="form3">
+      <input placeholder="First name" id="firstname" type="text" name="name" />
+      <input placeholder="Surname" id="surname" type="text" name="name" /><br>
+      <input placeholder="Mobile number or email address" id="email" type="mail" name="name" /><br>
+      <input placeholder="New password" type="password" id="password" name="password" /><br>
+      <h4>Birthday</h4>
+      <input type="date" id="date" /><br><br>
+      <input type="radio" id="sex" name="sex" value="male" /> Male
+      <input type="radio" id="sex2" name="sex" value="female"> Female<br><br>
+      <p id="terms">By clicking Create an account, you agree to our <a href="#">Terms</a> and<br>
+        confirm that you have read our <a href="#">Data Policy</a>, including our <a href="#">Cookie
+        Use Policy</a>. You may receive SMS message notifications from Facebook and can opt out at any time.
+      </p>
+      <br>
+      <button class="btn btn-lg btn-success" type="submit">Create an account</button>
+      <br>
+      <p><a href="#">Create a Page</a> for a celebrity, band or business.</p>
+    </div>
+  </div>
+</body>
+</html>
